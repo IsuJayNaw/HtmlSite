@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.service{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/servicebg.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+
+}
+.createPost{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    padding: 30px 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.137);
+}
+
+.service-info{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/1.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+
+}
+.posts{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    display: flex;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.137);
+}
+
+.posts img{
+    width: 25%;
+}
+.posts .post-details{
+    text-align: center;
+    padding: 20px;
+    width: 75%;
+}
+.post-details h3{
+    text-align: center;
+    text-decoration: none;
+}
+.post-details p{
+    text-decoration: none;
+}
+.posts-row a:hover{
+    text-decoration: none !important;
+}
+
+.postform{
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/8.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.hero h2{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+}
+
+.detailsForm{
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/9.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.service-Trans{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/2.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-Finance{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/4.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-buss{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/12.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-helth{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/13.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-mech{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(2, 2, 2, 0.671)), url('./pic/7.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
