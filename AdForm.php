@@ -3,7 +3,13 @@
 include "config.php";
 
 if(isset($_POST['submit'])){
-
+  $title = $_POST['title'];
+  $category = $_POST['category'];
+  $topic = $_POST['topic'];
+  $contact = $_POST['contact'];
+  $description = $_POST['description'];
+  $price = $_POST['price'];
+  
 }
 
 
@@ -40,44 +46,44 @@ if(isset($_POST['submit'])){
                   <div class="form-row">
                     <div class="col-md-12 mb-3 animate-right">
                         <label for="description">Title</label>
-                        <input class="form-control" type="text" id="description" placeholder="Title" required></input> 
+                        <input class="form-control" name="title" type="text" id="description" placeholder="Title" required></input> 
                     </div>
                   </div>
 
                     <div class="form-row">
                       <div class="col-md-6 mb-3 animate-right">
                         <label for="Category">Category</label>
-                        <select class="custom-select" id="Category" required>
-                            <option selected value="">Education</option>
-                            <option selected value="">Transpotation</option>
-                            <option selected value="">Finance</option>
-                            <option selected value="">Business</option>
-                            <option selected value="">Health</option>
-                            <option selected value="">Machanical</option>
+                        <select class="custom-select" name="category" id="Category" required>
+                            <option selected value="Education">Education</option>
+                            <option selected value="Transpotation">Transpotation</option>
+                            <option selected value="Finance">Finance</option>
+                            <option selected value="Business">Business</option>
+                            <option selected value="Health">Health</option>
+                            <option selected value="Machanical">Machanical</option>
                         </select>
                       </div>
                       <div class="col-md-6 mb-3 animate-right">
                         <label for="topic">Topic</label>
-                        <input type="text" class="form-control" id="validationDefault03" placeholder="Enter your Topic" required>
+                        <input type="text" class="form-control" name="topic" id="validationDefault03" placeholder="Enter your Topic" required>
                       </div>
                     </div>
                     <div class="form-row">
                     <div class="col-md-12 mb-3 animate-right">
                       <label for="topic">Contact</label>
-                      <input type="text" class="form-control" id="validationDefault03" placeholder="Enter your Contact" required>
+                      <input type="text" class="form-control" name="contact" id="validationDefault03" placeholder="Enter your Contact" required>
                     </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-12 mb-3 animate-right">
                             <label for="description">Description</label>
-                            <textarea class="form-control " id="description" placeholder="Enter your Details" required></textarea> 
+                            <textarea class="form-control" name="description" id="description" placeholder="Enter your Details" required></textarea> 
                         </div>
                     </div>
 
                     <div class="form-row">
                       <div class="col-md-12 mb-3 animate-right">
                         <label for="validationDefault03">Price</label>
-                        <input type="text" class="form-control" id="validationDefault03" placeholder="$ 100" required>
+                        <input type="text" class="form-control" name="price" id="validationDefault03" placeholder="$ 100" required>
                       </div>
                       <div class="col-md-12 mb-4">
                         <div class="input-group mb-3 animate-right">
