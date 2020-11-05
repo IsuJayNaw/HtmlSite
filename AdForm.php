@@ -1,3 +1,19 @@
+<?php
+
+include "config.php";
+
+if(isset($_POST['submit'])){
+
+}
+
+
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +36,7 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-12 mx-auto">
-                <form>
+                <form action="AdFrom.php" method="POST">
                   <div class="form-row">
                     <div class="col-md-12 mb-3 animate-right">
                         <label for="description">Title</label>
