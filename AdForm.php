@@ -10,14 +10,12 @@ if(isset($_POST['submit'])){
   $description = $_POST['description'];
   $price = $_POST['price'];
   
+
+  $query= mysqli_query($con,  "INSERT INTO addetails VALUES ('', '$title', '$catagory','$topic','$contact','$description','$price')");
 }
 
 
-
-
-
-
-
+$con->close();
 ?>
 
 <!DOCTYPE html>
