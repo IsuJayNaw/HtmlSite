@@ -3,27 +3,21 @@
 include "config.php";
 session_start();
 
-
-if(isset($_POST['view'])){
-  $title = $_POST['title'];
-  $category = $_POST['category'];
-  $topic = $_POST['topic'];
-  $contact = $_POST['contact'];
-  $description = $_POST['description'];
-  $price = $_POST['price'];
-  
-  $_SESSION['title'] = $title;
-  $_SESSION['category'] = $category;
-  $_SESSION['topic'] = $topic;
-  $_SESSION['contact'] = $contact;
-  $_SESSION['description'] = $description;
-  $_SESSION['price'] = $price;
-
-  
-  header('location: prewive.php');
-
+    $title = $_SESSION['title'];
+    $category = $_SESSION['category'];
+    $topic = $_SESSION['topic'];
+    $contact = $_SESSION['contact'];
+    $description = $_SESSION['description'];
+    $price = $_SESSION['price'];
   
 
+ 
+
+if(isset($_POST['submit'])){
+  
+  
+
+  //$query= mysqli_query($con,  "INSERT INTO addetails VALUES ('', '$title', '$category','$topic','$contact','$description','$price')");
 }
 
 
@@ -56,44 +50,38 @@ $con->close();
                   <div class="form-row">
                     <div class="col-md-12 mb-3 animate-right">
                         <label for="description">Title</label>
-                        <input class="form-control" name="title" type="text" id="description" placeholder="Title" ></input> 
+                        <input class="form-control" name="title" type="text" id="description" placeholder="Title" value="<?php echo $title; ?>"></input> 
                     </div>
                   </div>
 
                     <div class="form-row">
                       <div class="col-md-6 mb-3 animate-right">
                         <label for="Category">Category</label>
-                        <select class="custom-select" name="category" id="Category" >
-                            <option selected value="Education">Education</option>
-                            <option selected value="Transpotation">Transpotation</option>
-                            <option selected value="Finance">Finance</option>
-                            <option selected value="Business">Business</option>
-                            <option selected value="Health">Health</option>
-                            <option selected value="Machanical">Machanical</option>
-                        </select>
+                        <input class="form-control" name="title" type="text" id="description" placeholder="Title" value="<?php echo $category; ?>"></input> 
+                           
                       </div>
                       <div class="col-md-6 mb-3 animate-right">
                         <label for="topic">Topic</label>
-                        <input type="text" class="form-control" name="topic" id="validationDefault03" placeholder="Enter your Topic" >
+                        <input type="text" class="form-control" name="topic" id="validationDefault03" placeholder="Enter your Topic" required>
                       </div>
                     </div>
                     <div class="form-row">
                     <div class="col-md-12 mb-3 animate-right">
                       <label for="topic">Contact</label>
-                      <input type="text" class="form-control" name="contact" id="validationDefault03" placeholder="Enter your Contact" >
+                      <input type="text" class="form-control" name="contact" id="validationDefault03" placeholder="Enter your Contact" required>
                     </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-12 mb-3 animate-right">
                             <label for="description">Description</label>
-                            <textarea class="form-control" name="description" id="description" placeholder="Enter your Details" ></textarea> 
+                            <textarea class="form-control" name="description" id="description" placeholder="Enter your Details" required></textarea> 
                         </div>
                     </div>
 
                     <div class="form-row">
                       <div class="col-md-12 mb-3 animate-right">
                         <label for="validationDefault03">Price</label>
-                        <input type="text" class="form-control" name="price" id="validationDefault03" placeholder="$ 100" >
+                        <input type="text" class="form-control" name="price" id="validationDefault03" placeholder="$ 100" required>
                       </div>
                       <div class="col-md-12 mb-4">
                         <div class="input-group mb-3 animate-right">
@@ -105,7 +93,7 @@ $con->close();
                       </div>
                     </div>
 
-                    <button class="btn btn-success" name="view">Pre view</button>
+                    <button class="btn btn-success" name="submit">submit</button>
                     
                 </form>
             </div>
