@@ -3,7 +3,6 @@
 include "config.php";
 session_start();
 
-
 if(isset($_POST['view'])){
   $title = $_POST['title'];
   $category = $_POST['category'];

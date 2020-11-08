@@ -62,26 +62,26 @@ $con->close();
                       </div>
                       <div class="col-md-6 mb-3 animate-right">
                         <label for="topic">Topic</label>
-                        <input type="text" class="form-control" name="topic" id="validationDefault03" placeholder="Enter your Topic" required>
+                        <input type="text" class="form-control" name="topic" id="validationDefault03" placeholder="Enter your Topic" value="<?php echo $topic; ?>">
                       </div>
                     </div>
                     <div class="form-row">
                     <div class="col-md-12 mb-3 animate-right">
                       <label for="topic">Contact</label>
-                      <input type="text" class="form-control" name="contact" id="validationDefault03" placeholder="Enter your Contact" required>
+                      <input type="text" class="form-control" name="contact" id="validationDefault03" placeholder="Enter your Contact" value="<?php echo $contact; ?>">
                     </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-12 mb-3 animate-right">
                             <label for="description">Description</label>
-                            <textarea class="form-control" name="description" id="description" placeholder="Enter your Details" required></textarea> 
+                            <textarea class="form-control" name="description" id="description" placeholder="Enter your Details" value="<?php echo  $description; ?>" ></textarea> 
                         </div>
                     </div>
 
                     <div class="form-row">
                       <div class="col-md-12 mb-3 animate-right">
                         <label for="validationDefault03">Price</label>
-                        <input type="text" class="form-control" name="price" id="validationDefault03" placeholder="$ 100" required>
+                        <input type="text" class="form-control" name="price" id="validationDefault03" placeholder="$ 100" value="<?php echo $price; ?>">
                       </div>
                       <div class="col-md-12 mb-4">
                         <div class="input-group mb-3 animate-right">
